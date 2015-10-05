@@ -20,4 +20,7 @@ class QuotesController < ApplicationController
 	def quote_params
 		params.require(:quote).permit(:saying, :author)
 	end
+
+	def about
+	end
 end
