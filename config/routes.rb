@@ -1,6 +1,11 @@
 Splurty::Application.routes.draw do
+  #get '/', :to => 'quotes#index'
   root 'quotes#index'
 
+  #generates routes for you
+  #get 'quotes/:id/:quoteid', :to => 'quotes#show' 
+  #post 'quotes', :to => 'quotes#create'
+  # get 'quotes', :to => 'quotes#index'
   resources :quotes
 
   get 'about', :to => 'quotes#about'
